@@ -1,0 +1,18 @@
+# Python virtual environment (never upload this - it is very large)
+.venv/
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Trained model files can be large - they are re-created by running src/train_models.py
+models/*.joblib
+
+# Editor / OS files
+.vscode/
+Thumbs.db
+.DS_Store
