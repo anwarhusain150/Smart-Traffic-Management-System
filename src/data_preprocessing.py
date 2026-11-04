@@ -90,6 +90,10 @@ def add_features(df: pd.DataFrame) -> pd.DataFrame:
     # Cyclical encoding: hour 23 and hour 0 are neighbours, sin/cos captures that
     df["hour_sin"] = np.sin(2 * np.pi * df["hour"] / 24)
     df["hour_cos"] = np.cos(2 * np.pi * df["hour"] / 24)
+    # Interaction feature: weekday rush-hour shape differs from weekend shape.
+    # 'work_8' = 8 AM on a working day, 'off_8' = 8 AM on weekend/holiday.
+    off_day = (df["is_weekend"] == 1) | (df["is_holiday"] == 1)
+    df["daytype_hour"] = np.where(off_day, "off_", "work_") + df["hour"].astype(str)
     # Combine rare weather groups into 'Other'
     rare = ["Smoke", "Squall"]
     df["weather_main"] = df["weather_main"].replace(rare, "Other")
@@ -104,7 +108,7 @@ def make_congestion_label(volume) -> pd.Series:
 
 # Columns used as model inputs (traffic_volume is the target, so it is NOT here)
 NUMERIC_FEATURES = ["temp_c", "rain_1h", "snow_1h", "clouds_all", "hour_sin", "hour_cos"]
-CATEGORICAL_FEATURES = ["hour", "day_of_week", "month", "weather_main"]
+CATEGORICAL_FEATURES = ["hour", "day_of_week", "month", "weather_main", "daytype_hour"]
 BINARY_FEATURES = ["is_weekend", "is_holiday", "is_rush_hour"]
 FEATURES = NUMERIC_FEATURES + CATEGORICAL_FEATURES + BINARY_FEATURES
 
