@@ -142,6 +142,10 @@ streamlit run app/app.py          # opens the dashboard in your browser
 ```
 The notebooks can also be opened in **VS Code** or **Google Colab** and run top to bottom.
 
+### Deploying the dashboard (Streamlit Community Cloud)
+The app is deployed from this repository with main file `app/app.py`; `app/requirements.txt` lists the
+minimal libraries. On first start the app trains the final models (about 1–3 minutes), then caches them.
+
 ## 🧰 Tech Stack
 Python 3.11 · NumPy · Pandas · Matplotlib · Seaborn · SciPy · Scikit-learn · Joblib · Streamlit · Jupyter · Git & GitHub
 
