@@ -1,0 +1,27 @@
+{
+  "best_model": "Random Forest",
+  "params": {
+    "Baseline (Most Frequent)": {},
+    "Logistic Regression": {
+      "C": 10
+    },
+    "KNN": {
+      "n_neighbors": 15,
+      "weights": "uniform"
+    },
+    "Naive Bayes": {
+      "var_smoothing": 0.001
+    },
+    "Decision Tree": {
+      "max_depth": 8,
+      "min_samples_leaf": 20
+    },
+    "Random Forest": {
+      "max_depth": 20,
+      "min_samples_leaf": 1
+    },
+    "SVM (RBF)": {
+      "C": 1
+    }
+  }
+}
