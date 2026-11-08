@@ -9,7 +9,7 @@ highway (USA) to:
 1. **Predict traffic volume** (vehicles per hour) – *regression*
 2. **Classify congestion level** as **Low / Medium / High** – *multi-class classification*
 
-and presents both in an interactive **Streamlit dashboard**.
+and presents both in an interactive **Streamlit dashboard** – 👉 [**Open the live dashboard**](https://anwarhusain150-smart-traffic-management-system-appapp-h521pm.streamlit.app/)
 
 ![Average traffic by day and hour](Images/02_heatmap_day_hour.png)
 *Weekday rush hours (7 AM and 3–5 PM) are the most congested time slots.*
@@ -160,6 +160,7 @@ Python 3.11 · NumPy · Pandas · Matplotlib · Seaborn · SciPy · Scikit-learn
 
 ## 🔗 Links
 * GitHub: https://github.com/anwarhusain150/Smart-Traffic-Management-System
+* **Live dashboard:** https://anwarhusain150-smart-traffic-management-system-appapp-h521pm.streamlit.app/
 * LinkedIn post: *(to be added)*
 
 ⭐ If you find this project useful, please give it a star!
