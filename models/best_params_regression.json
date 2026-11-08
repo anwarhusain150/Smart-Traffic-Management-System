@@ -1,0 +1,29 @@
+{
+  "best_model": "Random Forest",
+  "params": {
+    "Baseline (Mean)": {},
+    "Linear Regression": {},
+    "Polynomial Regression": {
+      "alpha": 10,
+      "prep__num__poly__degree": 3
+    },
+    "Ridge": {
+      "alpha": 10
+    },
+    "Lasso": {
+      "alpha": 0.1
+    },
+    "Elastic Net": {
+      "alpha": 0.01,
+      "l1_ratio": 0.8
+    },
+    "Decision Tree": {
+      "max_depth": 10,
+      "min_samples_leaf": 5
+    },
+    "Random Forest": {
+      "max_depth": 12,
+      "min_samples_leaf": 5
+    }
+  }
+}
