@@ -111,6 +111,12 @@ Raw CSV → Cleaning → Feature engineering → EDA + statistical tests
 
 ![One week of predictions](Images/03_week_prediction.png)
 
+## Dashboard preview
+![Dashboard prediction tab](Images/dashboard/dashboard_prediction.png)
+*Prediction tab: volume, congestion level, suggestion and a 24-hour colour-coded forecast.*
+
+![Dashboard model results tab](Images/dashboard/dashboard_model_results.png)
+
 ## ⚠️ Limitations and future work
 * No information on accidents, roadworks, events or live traffic; snowfall poorly recorded.
 * Single road segment – results may not transfer to other cities without retraining.
