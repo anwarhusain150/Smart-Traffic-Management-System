@@ -167,6 +167,6 @@ Python 3.11 · NumPy · Pandas · Matplotlib · Seaborn · SciPy · Scikit-learn
 ## 🔗 Links
 * GitHub: https://github.com/anwarhusain150/Smart-Traffic-Management-System
 * **Live dashboard:** https://anwarhusain150-smart-traffic-management-system-appapp-h521pm.streamlit.app/
-* LinkedIn post: *(to be added)*
+* **LinkedIn post:** https://www.linkedin.com/feed/update/urn:li:activity:7525983987937443840/
 
 ⭐ If you find this project useful, please give it a star!

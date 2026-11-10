@@ -16,3 +16,6 @@ models/*.joblib
 .vscode/
 Thumbs.db
 .DS_Store
+
+# Word temporary lock files
+~$*
